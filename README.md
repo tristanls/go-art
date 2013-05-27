@@ -22,33 +22,35 @@ The source for this description is a post from [Computational Actors Guild](http
 
 #### Current Event - `E`
 
-### Meta-Variables
+### Other
+
+#### Meta-Variables
 
 Meta-variables are named with lower-case letters (`m`, `b`, `s`, `x`, `y`, `z`, ...).
 
-### "undefined" -  `?`
+#### "undefined" -  `?`
 
-### Empty list "NIL" - `()`
+#### Empty list "NIL" - `()`
 
-### Parenthesis
+#### Parenthesis
 
 Parenthesis are used for grouping, usually of tuples.
 
-### Tuples
+#### Tuples
 
 Tuples are formed from pairs, grouped right-to-left, separated by commas `,`.
 
 For example, if `((0, 1), 2, 3) = (x, y)` then `x = (0, 1)` and `y = (2, 3)`.
 
-### Suffix operators
+#### Suffix operators
 
 There are two suffix operators, `<` and `>`, used to access the head and tail of a pair.
 
 For example, if `D = ((0, 1), 2, 3)` then `D< = (0, 1)` and `D> = (2, 3)` and `D<>` = 1.
 
-### Literal Symbol - `#`
+#### Literal Symbol - `#`
 
-### Comments - `//`
+#### Comments - `//`
 
 ## Initial configuration
 
@@ -80,7 +82,7 @@ The changed contents of a register are represtend by a prime symbol `'` followin
         #<    D'=D<<,D> C'=C<>,C>                       // first
         #>    D'=D<>,D> C'=C<>,C>                       // rest
         #(    M'=0,(M,D) C'=C<>,C>                      // begin tuple
-        #,    C'=C<>,C>                                 // pair separator (ign)
+        #,    C'=C<>,C>                                 // pair separator (ignored)
         #)    M'=1,M> C'=C<>,C>                         // end tuple
         #{    *=S<,D M'=0,(M>,*) D=* C'=C<>,C>          // begin cases
         #;    D'=(D><,D<),D>> C'=C<>,C>                 // next case
