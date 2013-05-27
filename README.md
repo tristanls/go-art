@@ -10,41 +10,25 @@ The source for this description is a post from [Computational Actors Guild](http
 
 ### Machine Registers
 
-#### `M`
+#### Machine State Stack - `M`
 
-Machine State Stack
+#### Data Stack - `D`
 
-#### `D`
+#### Scope Stack - `S`
 
-Data Stack
+#### Code Stack - `C`
 
-#### `S`
+#### Event Queue - `Q`
 
-Scope Stack
-
-#### `C`
-
-Code Stack
-
-#### `Q`
-
-Event Queue
-
-#### `E`
-
-Current Event
+#### Current Event - `E`
 
 ### Meta-Variables
 
 Meta-variables are named with lower-case letters (`m`, `b`, `s`, `x`, `y`, `z`, ...).
 
-### `?`
+### "undefined" -  `?`
 
-`?` means "undefined".
-
-### `()`
-
-Empty list constant "NIL".
+### Empty list "NIL" - `()`
 
 ### Parenthesis
 
@@ -62,13 +46,9 @@ There are two suffix operators, `<` and `>`, used to access the head and tail of
 
 For example, if `D = ((0, 1), 2, 3)` then `D< = (0, 1)` and `D> = (2, 3)` and `D<>` = 1.
 
-### `#`
+### Literal Symbol - `#`
 
-The `#` prefix is used to indicate a literal symbol.
-
-### `//`
-
-Comments follow a `//`
+### Comments - `//`
 
 ## Initial configuration
 
