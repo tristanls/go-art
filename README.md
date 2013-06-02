@@ -1,4 +1,4 @@
-# art
+# art (Actor Run-Time)
 
 _Stability: 1 - [Experimental](https://github.com/tristanls/stability-index#stability-1---experimental)_
 
